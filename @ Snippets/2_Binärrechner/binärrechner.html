@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<title>Binärrechner</title>
+	<script src="./binärrechner.js"> </script>
+ </head>
+ <body onload="init()">	
+	<div id="head">
+		<table><tr>
+		<td><a href="http://snippets.hostfree.pw/index.html"><div>Umformer</div></a></td>
+		<td><a href="http://snippets.hostfree.pw/binärrechner.html"><div>Binärrechner</div></a></td>
+		<td><a href="http://snippets.hostfree.pw/invnum.html"><div>Inversion Number</div></a></td>
+		</tr></table>
+	</div>
+	<h3>Binärrechner</h3>
+	<div id="gantry">
+		<table>
+		<tr>
+			<td><input id="in1" type="text" name="bin"></td>
+			<td>+</td>
+			<td><input id="in2" type="text" name="bin"></td>
+			<td><button id="button" type="button" onclick="calculate()">Calculate</button></td>
+			<td><input id="out" type="text" readonly="readonly" name="bin"></td>
+			<td><button id="button" type="button" onclick="empty()">Clear</button></td>
+		</tr>
+		</table>
+	</div>
+ </body>
+</html>
