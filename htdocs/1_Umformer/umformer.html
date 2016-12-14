@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<title>Umformer</title>
+	<script src="./run.js"> </script>
+ </head>
+ <body onload="init()">	
+	<div id="head">
+		<table><tr>
+		<td><a href="http://snippets.hostfree.pw/1_Umformer/umformer.html"><div>Umformer</div></a></td>
+		<td><a href="http://snippets.hostfree.pw/2_Binärrechner/binärrechner.html"><div>Binärrechner</div></a></td>
+		<td><a href="http://snippets.hostfree.pw/3_Gauss-Algorythmus/gauss.html"><div>Gauss Algorithmus</div></a></td>
+		<td><a href="http://snippets.hostfree.pw/4_invnum/invnum.html"><div>Inversion Number</div></a></td>
+		</tr></table>
+	</div>
+	<h3>Umformer</h3>
+	<div id="gantry">
+		<table>
+		<tr>
+			<td>Binär: </td>
+			<td><input id="bin" type="text" name="bin"></td>
+			<td><button type="button" onclick="convertFrom('bin')">Convert</button></td>
+		</tr>
+		<tr>
+			<td>Octal: </td>
+			<td><input id="oct" type="text" name="oct"></td>
+			<td><button type="button" onclick="convertFrom('oct')">Convert</button></td>
+		</tr>
+		<tr>
+			<td>Hexadezimal: </td>
+			<td><input id="hex" type="text" name="hex"></td>
+			<td><button type="button" onclick="convertFrom('hex')">Convert</button></td>
+		</tr>
+		<tr>
+			<td>Dezimal: </td>
+			<td><input id="dec" type="text" name="dec"></td>
+			<td><button type="button" onclick="convertFrom('dec')">Convert</button></td>
+			<td><button type="button" onclick="empty()">Clear</button></td>
+		</tr>
+		</table>
+	</div>
+	<div id="hints">
+		<p> "Enter" um von ausgewählter Basis zu konvertieren </p><br>
+		<p> "Entf" um alle Felder zu leeren</p>
+	</div>
+	
+	
+ </body>
+</html>
